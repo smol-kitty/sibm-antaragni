@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&subset=latin&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/general.css" />
+  </head>
+  <body
+    style="
+      background-color: rgb(150, 108, 59);
+      width: 100vw;
+      overflow-x: hidden;
+    "
+  >
+    <div
+      class="d-flex flex-row"
+      style="
+        height: 12.5vh;
+        width: 100%;
+        padding-top: 5vh;
+        padding-left: 5vw;
+        position: fixed;
+        background: transparent;
+        backdrop-filter: blur(1rem);
+      "
+    >
+      <img src="/Images/Logos/SIBM.png" style="height: 7.5vh" />
+      <div
+        class="d-flex flex-row align-items-center justify-content-evenly text-white fw-bold"
+        style="width: 40vw; margin-left: 25vw"
+      >
+        <a>EVENTS</a>
+        <a>GALLERY</a>
+        <a>SPONSORS</a>
+        <a>CONTACT</a>
+      </div>
+      <img
+        src="/Images/Logos/Innovation-Council.png"
+        style="margin-left: 5vw"
+      />
+    </div>
+    <div
+      style="
+        width: 100%;
+        height: 100vh;
+        background-image: url('/Images/Background/Bg-1.png');
+        background-size: 100% 100%;
+      "
+    >
+      <div class="d-flex flex-column align-items-center justify-content-start">
+        <img
+          src="/Images/Logos/E-Summit.png"
+          style="width: 60vw; margin-top: 15vh"
+        />
+        <p class="text-white fw-bold fs-2">20TH & 21ST FEBRUARY, 2025</p>
+        <a
+          class="d-flex flex-column justify-content-center fs-4 fw-bold"
+          style="
+            width: 25vw;
+            height: 10vh;
+            border-radius: 3rem;
+            border: solid 0.1rem white;
+            text-align: center;
+            margin-top: 37.5vh;
+          "
+          >EMBARK ON THE JOURNEY</a
+        >
+      </div>
+    </div>
+    <div
+      style="
+        background-image: url('/Images/Background/Bg-2.png');
+        padding-top: 33vh;
+        background-size: 100% 100%;
+      "
+    >
+      <div
+        class="d-flex flex-column align-items-center"
+        style="
+          width: 66vw;
+          height: fit-content;
+          margin-left: 17vw;
+          border: 0.1rem rgb(248, 185, 68) solid;
+          border-radius: 0.5rem;
+          padding: 0.5rem;
+        "
+      >
+        <p class="fs-3 fw-bold" style="color: rgb(248, 185, 68)">THEME</p>
+        <p class="fs-4 fw-bold text-white">Antaragni 2024: A Syncretic Jaunt</p>
+        <p class="text-center text-white" style="font-size: 1.1rem">
+          Set sail on a timeless journey with Antaragni’s legendary ship,
+          embarking from the heart of the ocean to explore the world’s diverse
+          cultures. From the mystical lands of Asia to the enchanting realms of
+          Europe, the vibrant heart of Africa, the dynamic worlds of America,
+          and finally, our cherished homeland, India – each stop unveils a rich
+          tapestry of traditions, art, music, and beliefs. Experience the
+          grandeur of ancient temples, the rhythm of exotic dances, the stories
+          told through breathtaking architecture, and the wisdom of diverse
+          philosophies. As we traverse through these zones, we gather the best
+          cultural treasures – not just the famous, but the extraordinary
+          essence that defines each land. Our voyage culminates in India, a
+          celebration of unity in diversity, where all cultures blend into one
+          grand finale of music, dance, and art. Join us on this unparalleled
+          adventure, where every wave and wind echoes with the spirit of
+          acceptance, inclusiveness, and the shared human soul. Together, let’s
+          celebrate the world in its vibrant hues and boundless beauty.
+        </p>
+      </div>
+      <div class="d-flex flex-row" style="width: 100%; height: 100vh">
+        <div
+          class="d-flex flex-column align-items-end"
+          style="width: 50%; padding-right: 2.5vw; padding-top: 5vh"
+        >
+          <p
+            style="
+              color: #ff8888;
+              font-family: 'Karantina', sans-serif;
+              font-size: 3rem;
+              letter-spacing: 0.1rem;
+            "
+          >
+            AFTERMOVIES
+          </p>
+          <div
+            class="d-flex flex-row text-white align-items-center"
+            style="
+              gap: 1rem;
+              font-family: 'Josefin Sans', sans-serif;
+              padding: 1rem;
+              height: 5rem;
+            "
+          >
+            <div
+              onclick="changeLink('https://www.youtube.com/embed/zFtS63KKhvc',this)"
+              class="yt-frame yt-active"
+              style="
+                width: 3.5rem;
+                height: fit-content;
+                padding: 0.5rem;
+                text-align: center;
+                border-radius: 0.3rem;
+              "
+            >
+              2017
+            </div>
+            <div
+              onclick="changeLink('https://www.youtube.com/embed/hQQLEFmkqwg',this)"
+              class="yt-frame yt-inactive"
+              style="
+                width: 3.5rem;
+                height: fit-content;
+                padding: 0.5rem;
+                text-align: center;
+                border-radius: 0.3rem;
+              "
+            >
+              2018
+            </div>
+            <div
+              onclick="changeLink('https://www.youtube.com/embed/cMoHcuD6vOQ',this)"
+              class="yt-frame yt-inactive"
+              style="
+                width: 3.5rem;
+                height: fit-content;
+                padding: 0.5rem;
+                text-align: center;
+                border-radius: 0.3rem;
+              "
+            >
+              2019
+            </div>
+            <div
+              onclick="changeLink('https://www.youtube.com/embed/aiwXCmoyN90',this)"
+              class="yt-frame yt-inactive"
+              style="
+                width: 3.5rem;
+                height: fit-content;
+                padding: 0.5rem;
+                text-align: center;
+                border-radius: 0.3rem;
+              "
+            >
+              2021
+            </div>
+            <div
+              onclick="changeLink('https://www.youtube.com/embed/buSdqtdn_4I',this)"
+              class="yt-frame yt-inactive"
+              style="
+                width: 3.5rem;
+                height: fit-content;
+                padding: 0.5rem;
+                text-align: center;
+                border-radius: 0.3rem;
+              "
+            >
+              2022
+            </div>
+            <div
+              onclick="changeLink(`https://www.youtube.com/embed/FhCbx2TmFUE`,this)"
+              class="yt-frame yt-inactive"
+              style="
+                width: 3.5rem;
+                height: fit-content;
+                padding: 0.5rem;
+                text-align: center;
+                border-radius: 0.3rem;
+              "
+            >
+              2023
+            </div>
+          </div>
+          <iframe
+            style="width: 40vw; height: 45vh; margin-top: 2rem"
+            src="https://www.youtube.com/embed/zFtS63KKhvc"
+            id="yt-link"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          >
+          </iframe>
+          <a
+            class="text-white fs-3 yt-watch d-flex flex-row"
+            id="yt-redirect"
+            href="https://www.youtube.com/embed/zFtS63KKhvc"
+            target="_blank"
+            style="
+              font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+              margin-top: 1rem;
+              text-decoration: underline;
+              text-decoration-thickness: 0.1rem;
+              text-decoration-color: grey;
+              text-underline-offset: 2vh;
+            "
+            >Watch On Youtube
+          </a>
+        </div>
+        <div
+          style="
+            width: 0.3vw;
+            height: 85vh;
+            background-color: white;
+            margin-top: 1rem;
+          "
+        ></div>
+        <div
+          class="d-flex flex-column align-items-start"
+          style="width: 50%; padding-left: 2.5vw; padding-top: 5vh"
+        >
+          <p
+            style="
+              color: #ff8888;
+              font-family: 'Karantina', sans-serif;
+              font-size: 3rem;
+              letter-spacing: 0.1rem;
+            "
+          >
+            ABOUT ANTARAGNI
+          </p>
+          <p
+            class="text-white fs-5"
+            style="
+              font-family: 'Mooli', sans-serif;
+              line-height: 4vh;
+              padding-right: 10vw;
+            "
+          >
+            Antaragni - The Annual Cultural Festival Of IIT Kanpur Is One Of The
+            Largest And Most Anticipated Festivals Throughout Asia. Translated
+            Literally To The Fire Within, Everyone Associated Will Feel Inside.
+            Continuing Its Rich Legacy Of 58 Years, Antaragni Combines The Zeal
+            And Desire Of The Students Of IIT Kanpur And Across India To
+            Showcase And Celebrate Their Amazing Cultural Talent As It Has
+            Evolved To Be A Platform For Global Cultural Interaction Over The
+            Years. It Has Been The Touchstone Of India's College Cultural
+            Heritage.
+          </p>
+          <div
+            class="d-flex flex-row justify-content-evenly text-white fs-5"
+            style="width: 37.5vw; font-weight: 500; margin-top: 2.5vh"
+          >
+            <div class="text-center">
+              <span class="dynamic-num">0</span>+<br />Corporates
+            </div>
+
+            <div class="text-center">
+              <span class="dynamic-num">0</span>+<br />Govt. Orgs
+            </div>
+            <div class="text-center">
+              <span class="dynamic-num">0</span>+<br />Colleges
+            </div>
+            <div class="text-center">
+              <span class="dynamic-num">0</span>+<br />Events
+            </div>
+            <div class="text-center">
+              <span class="dynamic-num">0</span>+<br />Footfall
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-evenly text-white fs-5"
+            style="width: 37.5vw; font-weight: 500; margin-top: 2.5vh"
+          >
+            <div class="text-center">
+              <span class="dynamic-num">0</span>+<br />Eyeballs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="width: 100%; height: 100vh"
+        class="d-flex flex-column align-items-center"
+      >
+        <p
+          class="fw-bold text-white"
+          style="
+            font-family: 'Karantina', sans-serif;
+            font-size: 3.5rem;
+            text-shadow: 0 0 1rem pink;
+          "
+        >
+          GALLERY
+        </p>
+        <div
+          style="
+            height: 65vh;
+            width: 90vw;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 1.5vw;
+          "
+        >
+          <div
+            style="
+              width: 100%;
+              height: 100%;
+              grid-column: 1 / span 2;
+              grid-row: 1;
+              background-image: url('/Images/Gallery/1.jpg');
+              background-position: center;
+              background-size: cover;
+              border: #ff8888 solid 0.1rem;
+              border-radius: 0.5rem;
+            "
+          ></div>
+          <div
+            style="
+              width: 100%;
+              height: 100%;
+              grid-column: 1;
+              grid-row: 2;
+              background-image: url('/Images/Gallery/3.jpg');
+              background-position: center;
+              background-size: cover;
+              border: #ff8888 solid 0.1rem;
+              border-radius: 0.5rem;
+            "
+          ></div>
+          <div
+            style="
+              width: 100%;
+              height: 100%;
+              grid-column: 1;
+              grid-row: 3;
+              background-image: url('/Images/Gallery/5.jpg');
+              background-position: center;
+              background-size: cover;
+              border: #ff8888 solid 0.1rem;
+              border-radius: 0.5rem;
+            "
+          ></div>
+          <div
+            style="
+              width: 100%;
+              height: 100%;
+              grid-column: 2;
+              grid-row: 2 / span 2;
+              background-image: url('/Images/Gallery/4.jpg');
+              background-position: center;
+              background-size: cover;
+              border: #ff8888 solid 0.1rem;
+              border-radius: 0.5rem;
+            "
+          ></div>
+          <div
+            style="
+              width: 100%;
+              height: 100%;
+              grid-column: 3;
+              grid-row: 3;
+              background-image: url('/Images/Gallery/6.jpg');
+              background-position: center;
+              background-size: cover;
+              border: #ff8888 solid 0.1rem;
+              border-radius: 0.5rem;
+            "
+          ></div>
+          <div
+            style="
+              width: 100%;
+              height: 100%;
+              grid-column: 3;
+              grid-row: 1 / span 2;
+              background-image: url('/Images/Gallery/2.jpg');
+              background-position: center;
+              background-size: cover;
+              border: #ff8888 solid 0.1rem;
+              border-radius: 0.5rem;
+            "
+          ></div>
+        </div>
+        <div
+          class="d-flex flex-row align-items-end"
+          style="
+            width: 25vw;
+            height: 5vh;
+            margin-top: 5vh;
+            gap: 1vw;
+            color: #ff8888;
+            font-weight: 500;
+            font-family: 'Josefin Sans', sans-serif;
+            border-radius: 0.25rem;
+          "
+        >
+          <div
+            class="gallery-button"
+            style="
+              padding: 0.25rem 1.5rem;
+              border: #ff8888 solid 0.1rem;
+              border-radius: 0.25rem;
+            "
+          >
+            Media
+          </div>
+          <div
+            class="gallery-button"
+            style="
+              padding: 0.75rem 1.5rem;
+              border: #ff8888 solid 0.1rem;
+              border-radius: 0.25rem;
+            "
+          >
+            View More
+          </div>
+
+          <div
+            class="gallery-button"
+            style="
+              padding: 0.25rem 1.5rem;
+              border: #ff8888 solid 0.1rem;
+              border-radius: 0.25rem;
+            "
+          >
+            Brochure
+          </div>
+        </div>
+      </div>
+      <div
+        style="height: fit-content"
+        class="d-flex flex-column align-items-center"
+      >
+        <p
+          style="font-family: 'Karantina', sans-serif; font-size: 3.5rem"
+          class="text-white fw-bold"
+        >
+          JOIN THE COMMUNITY
+        </p>
+        <div
+          class="d-flex flex-row"
+          style="height: 50vh; width: 80vw; background-color: black"
+        >
+          <div
+            class="text-white d-flex flex-column align-items-center"
+            style="
+              height: 100%;
+              width: 50%;
+              padding-top: 7.5vh;
+              font-family: Arial, Helvetica, sans-serif;
+              padding-left: 2.5vw;
+              padding-right: 2.5vw;
+            "
+          >
+            <p class="fs-5" style="font-weight: 600">
+              Welcome to Antaragni - IIT KANPUR'S Cultural Fest!
+            </p>
+            <p class="fs-5" style="margin-top: 2vh">
+              Stay tuned for all the latest updates, event announcements, and
+              exclusive content related to Antaragni, our annual cultural
+              extravaganza. Join us in celebrating creativity, talent, and the
+              vibrant spirit of campus life. Don't miss out on any of the
+              action. This is where the magic happens!
+            </p>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center justify-content-center"
+          >
+            <img src="/Images/Others/1.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function changeLink(url, clickedButton) {
+        document.getElementById("yt-link").src = url;
+        document.getElementById("yt-redirect").href = url;
+        const buttons = document.querySelectorAll(".yt-frame");
+        buttons.forEach((button) => {
+          button.classList.remove("yt-active");
+          button.classList.add("yt-inactive");
+        });
+        clickedButton.classList.add("yt-active");
+        clickedButton.classList.remove("yt-inactive");
+      }
+    </script>
+  </body>
+</html>

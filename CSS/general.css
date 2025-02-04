@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(244, 120, 141);
+  border-radius: 0.5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: brown;
+  cursor: pointer;
+}
+
+.yt-watch:hover {
+  background-color: transparent;
+}
+
+.yt-frame:hover {
+  cursor: pointer;
+}
+
+.yt-active {
+  border: solid pink 0.1rem;
+  box-shadow: 0 0 0.5rem pink;
+  margin-bottom: 1rem;
+}
+
+.yt-inactive {
+  border: solid white 0.1rem;
+  box-shadow: 0 0 0.5rem white;
+}
+
+.yt-inactive:hover {
+  margin-bottom: 0.5rem;
+}
+
+.gallery-button:hover {
+  color: white;
+  cursor: pointer;
+}
